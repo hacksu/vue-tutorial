@@ -71,4 +71,6 @@ npm run serve
 
 Let's look at the structure of our project as we set it up:
 
+![Picture of the project structure](https://github.com/hacksu/vue-tutorial/blob/master/Screen%20Shot%202018-09-04%20at%205.36.16%20PM.png?raw=true)
+
 
