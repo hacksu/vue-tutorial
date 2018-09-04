@@ -1,7 +1,7 @@
-# Vue Tutorial 🖖
+# 🖖Vue Tutorial 🖖
 A crash course on how to start your first Vue project!
 
-## Overview - What is VueJS? What are we making?
+## 🤔 Overview - What is VueJS? What are we making? 🤔
 
 VueJS is a framework to build big, powerful websites. You can actually learn Vue from its [website](https://vuejs.org/), which has great documentation and examples!
 
@@ -13,7 +13,7 @@ When making a larger project, you'll need to manage a ton of different files, di
  - **VueJS**, which lets us handle routing, "reactive" data, "components", and a ton of cool shortcuts! This is the main thing we'll be focusing on.
    - (If you've heard of ReactJS or AngularJS, Vue is comparable to those.)
    
-## Setting up our project
+## ✨Setting up our project ✨
 
 We're going to use NPM to install the Vue CLI, which will let us set up a template project.
 
@@ -66,3 +66,9 @@ Finally, our project is set up! Just like your terminal says, type these two com
 cd my-project-name
 npm run serve
 ```
+
+## Our Project! 
+
+Let's look at the structure of our project as we set it up:
+
+
