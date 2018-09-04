@@ -73,4 +73,51 @@ Let's look at the structure of our project as we set it up:
 
 ![Picture of the project structure](https://github.com/hacksu/vue-tutorial/blob/master/Screen%20Shot%202018-09-04%20at%205.36.16%20PM.png?raw=true)
 
+When the project loads, it loads the `public/index.html` file, and inside `<div id="app">`, it will put the contents of `src/App.vue`. Both of these files already work fine, but it's important to understand how they work!
 
+The `App.vue` file is our first `.vue` file. These files contain 3 tags: 
+
+```
+<template>
+  <!-- Write HTML here, with some special Vue properties. 
+       Templates should each contain exactly 1 root tag. -->
+  <div>
+     <h1>Hi, world!</h1>
+     <p>Blah blah blah!</p>
+  </div>
+</template>
+
+<script>
+  // Write Javascript here pertaining to the above HTML component.
+  // Usually, your Vue code looks something like this:
+
+export default {
+  data() {
+    return {
+      msg: 'Hello, world!'
+    }
+  },
+  mounted() {
+    console.log("This will be called as soon as the component runs!");
+    this.myFunc(); // This is how you call a method.
+  },
+  methods: {
+    myFunc() {
+      console.log("This is a function!");
+    }
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+  /* The Style tag is where you write your CSS for this page!
+     The lang="scss" attribute lets you import Sass and use it with your CSS 
+                     (if your project has it!)
+     The 'scoped' attribute means that whatever styles you write here will only be applies
+                     to this .vue file
+  */
+ h1 {
+   color: red;
+ }
+</style>
+```
