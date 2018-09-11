@@ -17,7 +17,7 @@ When making a larger project, you'll need to manage a ton of different files, di
 
 We're going to use NPM to install the Vue CLI, which will let us set up a template project.
 
-First, we're going to need NPM. To see if you have it, go to your command line, and type `npm -v`. If you get an error, you should follow this [npm installation guide](https://docs.npmjs.com/getting-started/installing-node) to get it up and running.
+First, we're going to need NPM. To see if you have it, go to your command line, and type `npm -v`. If you get an error, you should follow this [npm installation guide]([NodeJS](https://nodejs.org/en/download/).) to get it up and running.
 
 Next, we want to install the Vue CLI (CLI stands for **C**ommand **L**ine **I**nterface, it just means an easy way to set up a Vue project through your command line.) To install Vue CLI: 
 
