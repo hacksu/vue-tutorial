@@ -67,6 +67,9 @@ cd my-project-name
 npm run serve
 ```
 
+## Running a compiled Vue project with express when using Vue-Loader history mode
+https://stackoverflow.com/questions/52327143/serving-vuejs-builds-via-express-js-using-history-mode
+
 ## Our Project! 
 
 Let's look at the structure of our project as we set it up:
