@@ -1,6 +1,21 @@
 # 🖖Vue Tutorial 🖖
 A crash course on how to start your first Vue project!
 
+## Required Software
+Vue.js runs off JavaScript and NodeJS! In order to continue with this lesson, please be sure that NodeJS is installed as well as NPM!
+
+You can check if you have both installed by doing:
+
+```node -v && npm -v```
+
+
+Download NodeJS and NPM here! (NPM is bundled in with this installation of Node)
+
+https://nodejs.org/en/
+
+## Learn more about Vue.js!
+https://vuejs.org/ 
+
 ## 🤔 Overview - What is VueJS? What are we making? 🤔
 
 VueJS is a framework to build big, powerful websites. You can actually learn Vue from its [website](https://vuejs.org/), which has great documentation and examples!
