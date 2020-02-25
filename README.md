@@ -16,6 +16,9 @@ https://nodejs.org/en/
 ## Learn more about Vue.js!
 https://vuejs.org/ 
 
+## Install Vue.js DevTools!
+https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd
+
 ## 🤔 Overview - What is VueJS? What are we making? 🤔
 
 VueJS is a framework to build big, powerful websites. You can actually learn Vue from its [website](https://vuejs.org/), which has great documentation and examples!
