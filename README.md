@@ -86,3 +86,31 @@ Inside there we have a few more folders, `assets`, `components`, `router`, and `
 - main.js is what connects everything together.
 
 So what does all of this mean? Well, remember when I mentioned "single-file components"? Vue works by allowing you to have a .vue file which can include HTML, JavaScript, and CSS/Sass all in one file! Single-File components can load up other single-file components which allows you to modularize your whole website!
+
+Here's how a Vue single-file component is declared
+
+SomeComponent.vue
+```vue
+<template>
+  <!-- html code can go here -->
+  <p>hi there!</p>
+</template>
+
+<script>
+
+export default {
+  name: 'SomeComponent',
+
+}
+</script>
+
+<style lang="scss" scoped>
+// lang="scss" allows you to use Sass
+// scoped makes this styling only apply to this .vue file, and not globally.
+
+p {
+  color: red;
+}
+
+</style>
+```
