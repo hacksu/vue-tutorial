@@ -56,3 +56,14 @@ What are "frameworks"? Well, in the world of the JavaScript stack; there's liter
 So, hopefully your stuff is installed now. These frameworks are known for having long installation time due to all their dependencies.
 
 ## Time to start coding
+
+Lets get our project up and running.
+
+```bash
+# Go into our project directory
+cd my-first-vue-app
+# Run our project with hot-relading enabled
+npm run serve
+```
+
+After waiting a moment for it to do some stuff, it should say `Listening on http://localhost:8080`. Go ahead and visit <a target="_blank" href="http://localhost:8080" >localhost:8080</a> in your browser!
