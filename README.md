@@ -114,3 +114,18 @@ p {
 
 </style>
 ```
+
+Note: `template`, `script`, and `style` are all optional. You don't need to include all 3 if you don't need all 3.
+
+## Let's do some cool stuff
+
+Now that we know what we're dealing with, lets do something!
+
+- data
+- v-model
+- v-for
+- methods
+- v-on
+- computed
+- mounted
+- new route
