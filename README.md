@@ -26,7 +26,7 @@ Now you have Vue's CLI installed!
 vue info
 ```
 
-### Setting up our project
+## Setting up our project
 
 Lets get started by going in to a directory that we want to do create our project. Open a terminal where you want your project to be.
 
@@ -45,7 +45,7 @@ Our Vue configuration will be:
 - [Router](https://router.vuejs.org/guide/#html) (with History Mode)
 - [Dart-Sass](https://sass-lang.com/documentation) Pre-Processor
 
-### While that's installing... what even is Vue.js?
+## While that's installing... what even is Vue.js?
 
 Vue.js is an open-source framework used to build big, powerful websites! If you've ever heard of React and Angular; Vue is up there with them! Vue is the newest addition to the group and is currently being adopted more and more each day.
 
@@ -55,4 +55,4 @@ What are "frameworks"? Well, in the world of the JavaScript stack; there's liter
 
 So, hopefully your stuff is installed now. These frameworks are known for having long installation time due to all their dependencies.
 
-### Time to start coding
+## Time to start coding
