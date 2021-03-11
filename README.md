@@ -69,3 +69,20 @@ npm run serve
 After waiting a moment for it to do some stuff, it should say `Listening on http://localhost:8080`.
 
 Go ahead and visit [localhost:8080](http://localhost:8080)</a> in your browser and you should see our Vue app!
+
+## What does our project consist of?
+
+If you open your project folder in your favorite code editor you'll see a few files and directories, but lets start out with the `src` folder.
+
+The `src` folder is where all your source code for your app is. This is where we'll be coding.
+
+Inside there we have a few more folders, `assets`, `components`, `router`, and `views`; along with `App.vue` and `main.js`.
+
+- The assets folder is where we can put images and static files to be used in our app.
+- The components folder is where we can put other .vue single-file components.
+- The router folder is where we can put our code for `vue-router` so that our app can have different pages.
+- The views folder is where we can put the entry points for our various pages.
+- App.vue is the root entrypoint of our whole app
+- main.js is what connects everything together.
+
+So what does all of this mean? Well, remember when I mentioned "single-file components"? Vue works by allowing you to have a .vue file which can include HTML, JavaScript, and CSS/Sass all in one file! Single-File components can load up other single-file components which allows you to modularize your whole website!
