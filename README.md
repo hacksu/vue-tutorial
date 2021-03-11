@@ -66,4 +66,6 @@ cd my-first-vue-app
 npm run serve
 ```
 
-After waiting a moment for it to do some stuff, it should say `Listening on http://localhost:8080`. Go ahead and visit <a target="_blank" href="http://localhost:8080" >localhost:8080</a> in your browser!
+After waiting a moment for it to do some stuff, it should say `Listening on http://localhost:8080`.
+
+Go ahead and visit [localhost:8080](http://localhost:8080)</a> in your browser and you should see our Vue app!
