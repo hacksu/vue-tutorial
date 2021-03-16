@@ -1,144 +1,131 @@
-# 🖖Vue Tutorial 🖖
-A crash course on how to start your first Vue project!
+# 🖖 Vue 3 Tutorial 🖖
 
-## Required Software
-Vue.js runs off JavaScript and NodeJS! In order to continue with this lesson, please be sure that NodeJS is installed as well as NPM!
+## Requirements
 
-You can check if you have both installed by doing:
+In order to use [Vue](https://vuejs.org/), we need to have [NodeJS](https://nodejs.org/en/download/) and NPM installed. Head [here](https://nodejs.org/en/download/) to download NodeJS (and NPM, which is packaged in to the download)!
 
-```node -v && npm -v```
+If you are not on Mac or Windows, check out [here](https://nodejs.org/en/download/package-manager/) for more installation instructions.
 
+## Lets get started
 
-Download NodeJS and NPM here! (NPM is bundled in with this installation of Node)
+Be sure to have NodeJS installed!
 
-https://nodejs.org/en/
+You can check to make sure everything is installed properly by opening a terminal and running `node -v && npm -v` which should show two version numbers! As long as you get 2 lines of numbers, you'll be good for this lesson! If you're having problems, just Google `installing node [PLATFORM]`, like "installing node windows" and they should help you out. Google and StackOverflow is your friend!
 
-## Learn more about Vue.js!
-https://vuejs.org/ 
+Once you have NodeJS installed, you need to install Vue's Command Line tools. Lets get started by opening a terminal and running the install command.
 
-## Install Vue.js DevTools!
-https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd
-
-## 🤔 Overview - What is VueJS? What are we making? 🤔
-
-VueJS is a framework to build big, powerful websites. You can actually learn Vue from its [website](https://vuejs.org/), which has great documentation and examples!
-
-When making a larger project, you'll need to manage a ton of different files, different routes, different libraries you'll want to import, and manage data across your entire app. Here are the main tools we'll use to do that:
-
- - **NPM**, or **N**ode **P**ackage **M**anager, will be used to install and run different Javascript packages. Put extremely simply, this is how we can easily import tools to add to our website. We'll use this to install all our other tools - including VueJS!
- - **Webpack**, which takes all of our complicated files and links them together into one, coherent, efficient file when it gives it to the browser. This process is called **bundling**.
- - **Babel**, which takes our VueJS code and "transpiles" it into regular Javascript so browsers can read it.
- - **VueJS**, which lets us handle routing, "reactive" data, "components", and a ton of cool shortcuts! This is the main thing we'll be focusing on.
-   - (If you've heard of ReactJS or AngularJS, Vue is comparable to those.)
-   
-## ✨Setting up our project ✨
-
-We're going to use NPM to install the Vue CLI, which will let us set up a template project.
-
-First, we're going to need NPM. To see if you have it, go to your command line, and type `npm -v`. If you get an error, you should follow this [npm installation guide]([NodeJS](https://nodejs.org/en/download/).) to get it up and running.
-
-Next, we want to install the Vue CLI (CLI stands for **C**ommand **L**ine **I**nterface, it just means an easy way to set up a Vue project through your command line.) To install Vue CLI: 
-
-`npm install -g @vue/cli`
-
-Finally, we can navigate to the directory you want your Vue project, and type this to set it up: 
-
-`vue create my-project-name`
-
-You should see some options for setting up your project:
-
-```
-? Please pick a preset: (Use arrow keys)
-❯ default (babel, eslint) 
-  Manually select features 
+```bash
+# You will likely need sudo if on Linux
+# -g flag means global installation.
+npm install -g @vue/cli
 ```
 
-Pick "manually select features", so we can look at our options! Here are the features we're going to select.
-
-Use the arrow keys to go up and down and press `space` to toggle the options. (Enter will continue).
-
-```
-? Please pick a preset: Manually select features
-? Check the features needed for your project: (Press <space> to select, <a> to tog
-gle all, <i> to invert selection)
-❯◉ Babel
- ◯ TypeScript
- ◯ Progressive Web App (PWA) Support
- ◉ Router
- ◉ Vuex
- ◉ CSS Pre-processors
- ◯ Linter / Formatter
- ◯ Unit Testing
- ◯ E2E Testing
+Now you have Vue's CLI installed!
+```bash
+# List our info, proving its installed and fully working
+vue info
 ```
 
-Now, press enter! It's going to ask you a few more questions, and here's how we'll answer.
-- **Y**es, we want to use history mode for the router.
-- We want to use **SCSS/SASS**. (We probably won't talk about this today, but it's a really nice tool!)
-- We want dedicated config files
-- You can choose whether or not you want to save this. I saved this configuration as "no lint, no tests".
+## Setting up our project
 
-Finally, our project is set up! Just like your terminal says, type these two commands to get your project running:
+Lets get started by going in to a directory that we want to do create our project. Open a terminal where you want your project to be.
 
+Next, we're going to run `vue create [project-name]` in order to make a vue project with all our dependencies!
+
+We're going to specify the `--preset` flag along with the Hacksu lesson repository so you you don't have to worry about the prompts it would normally give you.
+
+```bash
+# Create our Vue Project
+vue create my-first-vue-app --preset hacksu/vue-tutorial
 ```
-cd my-project-name
+
+Our Vue configuration will be:
+- [Vue 3](https://v3.vuejs.org/guide/introduction.html)
+- [Babel](https://babeljs.io/)
+- [Router](https://router.vuejs.org/guide/#html) (with History Mode)
+- [Dart-Sass](https://sass-lang.com/documentation) Pre-Processor
+
+## While that's installing... what even is Vue.js?
+
+Vue.js is an open-source framework used to build big, powerful websites! If you've ever heard of React and Angular; Vue is up there with them! Vue is the newest addition to the group and is currently being adopted more and more each day.
+
+So why is this lesson about Vue and not React or Angular? Well, there's a reason why React and Angular jobs have such high salaries; they are real professional tools. Vue is designed to be a lot more casual. You can do all the same things in all 3 frameworks, but the learning curve for Vue is much easier for beginners and its a perfect stepping stone to get into React and Angular while also being the absolute perfect framework for small projects.
+
+What are "frameworks"? Well, in the world of the JavaScript stack; there's literally a million ways to do anything. Frameworks help by implementing features developers frequently use but often implement on their own and it creates a uniform way to do things for developers. Vue, React, and Angular are used to build frontend HTML+CSS+JS applications that are really modular, clean, and super reactive and responsive! Why bother making a list of items when your framework can turn it into a single line of code!
+
+So, hopefully your stuff is installed now. These frameworks are known for having long installation time due to all their dependencies.
+
+## Time to start coding
+
+Lets get our project up and running.
+
+```bash
+# Go into our project directory
+cd my-first-vue-app
+# Run our project with hot-relading enabled
 npm run serve
 ```
 
-## Running a compiled Vue project with express when using Vue-Loader history mode
-https://stackoverflow.com/questions/52327143/serving-vuejs-builds-via-express-js-using-history-mode
+After waiting a moment for it to do some stuff, it should say `Listening on http://localhost:8080`.
 
-## Our Project! 
+Go ahead and visit [localhost:8080](http://localhost:8080)</a> in your browser and you should see our Vue app!
 
-Let's look at the structure of our project as we set it up:
+## What does our project consist of?
 
-![Picture of the project structure](https://github.com/hacksu/vue-tutorial/blob/master/Screen%20Shot%202018-09-04%20at%205.36.16%20PM.png?raw=true)
+If you open your project folder in your favorite code editor you'll see a few files and directories, but lets start out with the `src` folder.
 
-When the project loads, it loads the `public/index.html` file, and inside `<div id="app">`, it will put the contents of `src/App.vue`. Both of these files already work fine, but it's important to understand how they work!
+The `src` folder is where all your source code for your app is. This is where we'll be coding.
 
-The `App.vue` file is our first `.vue` file. These files contain 3 tags: 
+Inside there we have a few more folders, `assets`, `components`, `router`, and `views`; along with `App.vue` and `main.js`.
 
-```
+- The assets folder is where we can put images and static files to be used in our app.
+- The components folder is where we can put other .vue single-file components.
+- The router folder is where we can put our code for `vue-router` so that our app can have different pages.
+- The views folder is where we can put the entry points for our various pages.
+- App.vue is the root entrypoint of our whole app
+- main.js is what connects everything together.
+
+So what does all of this mean? Well, remember when I mentioned "single-file components"? Vue works by allowing you to have a .vue file which can include HTML, JavaScript, and CSS/Sass all in one file! Single-File components can load up other single-file components which allows you to modularize your whole website!
+
+Here's how a Vue single-file component is declared
+
+SomeComponent.vue
+```vue
 <template>
-  <!-- Write HTML here, with some special Vue properties. 
-       Templates should each contain exactly 1 root tag. -->
-  <div>
-     <h1>Hi, world!</h1>
-     <p>Blah blah blah!</p>
-  </div>
+  <!-- html code can go here -->
+  <p>hi there!</p>
 </template>
 
 <script>
-  // Write Javascript here pertaining to the above HTML component.
-  // Usually, your Vue code looks something like this:
 
 export default {
-  data() {
-    return {
-      msg: 'Hello, world!'
-    }
-  },
-  mounted() {
-    console.log("This will be called as soon as the component runs!");
-    this.myFunc(); // This is how you call a method.
-  },
-  methods: {
-    myFunc() {
-      console.log("This is a function!");
-    }
-  }
+  name: 'SomeComponent',
+
 }
 </script>
 
 <style lang="scss" scoped>
-  /* The Style tag is where you write your CSS for this page!
-     The lang="scss" attribute lets you import Sass and use it with your CSS 
-                     (if your project has it!)
-     The 'scoped' attribute means that whatever styles you write here will only be applies
-                     to this .vue file
-  */
- h1 {
-   color: red;
- }
+// lang="scss" allows you to use Sass
+// scoped makes this styling only apply to this .vue file, and not globally.
+
+p {
+  color: red;
+}
+
 </style>
 ```
+
+Note: `template`, `script`, and `style` are all optional. You don't need to include all 3 if you don't need all 3.
+
+## Let's do some cool stuff
+
+Now that we know what we're dealing with, lets do something!
+
+- data
+- v-model
+- v-for
+- methods
+- v-on
+- computed
+- mounted
+- new route
